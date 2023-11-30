@@ -1,0 +1,12 @@
+<form (ngSubmit)="login()">
+  <div>
+    <p class="title">hasło</p>
+    <input matInput type="password" id="password" placeholder="Value" class="input" required>
+  </div>
+  <div class="login-block">
+    <p class="title">login/e-mail</p>
+    <input matInput id="email" placeholder="Value" class="input" required>
+    <a href="/reset" routerLinkActive="active" (click)="currentRoute='/reset'" [class.active]="isRouteActive('/reset')" class="reset">zresetuj hasło</a>
+  </div>
+  <button mat-raised-button type="submit" color="primary" class="button">Label</button>
+</form>

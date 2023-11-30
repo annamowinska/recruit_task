@@ -1,0 +1,8 @@
+<main class="main">
+    <div class="container">
+      <a href="/login" routerLinkActive="active" (click)="currentRoute='/login'" [class.active]="isRouteActive('/login')" class="nav">Zaloguj</a>
+      <a href="/registration" routerLinkActive="active" (click)="currentRoute='/registration'" [class.active]="isRouteActive('/registration')" class="nav">Zarejestruj</a>
+  </div>
+  <router-outlet></router-outlet>
+</main>
+
